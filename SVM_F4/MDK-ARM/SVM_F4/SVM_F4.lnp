@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"svm_f4\startup_stm32f407xx.o"
+"svm_f4\bldc.o"
+"svm_f4\svm.o"
+"svm_f4\main.o"
+"svm_f4\gpio.o"
+"svm_f4\tim.o"
+"svm_f4\stm32f4xx_it.o"
+"svm_f4\stm32f4xx_hal_msp.o"
+"svm_f4\stm32f4xx_hal_tim.o"
+"svm_f4\stm32f4xx_hal_tim_ex.o"
+"svm_f4\stm32f4xx_hal_rcc.o"
+"svm_f4\stm32f4xx_hal_rcc_ex.o"
+"svm_f4\stm32f4xx_hal_flash.o"
+"svm_f4\stm32f4xx_hal_flash_ex.o"
+"svm_f4\stm32f4xx_hal_flash_ramfunc.o"
+"svm_f4\stm32f4xx_hal_gpio.o"
+"svm_f4\stm32f4xx_hal_dma_ex.o"
+"svm_f4\stm32f4xx_hal_dma.o"
+"svm_f4\stm32f4xx_hal_pwr.o"
+"svm_f4\stm32f4xx_hal_pwr_ex.o"
+"svm_f4\stm32f4xx_hal_cortex.o"
+"svm_f4\stm32f4xx_hal.o"
+"svm_f4\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "SVM_F4\SVM_F4.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SVM_F4.map" -o SVM_F4\SVM_F4.axf
